@@ -1,0 +1,124 @@
+.package {
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    color: #fff;
+    padding: 40px 0;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    @media (max-width: 899px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: 599px) {
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+}
+
+
+.package__header {
+    padding: 0 15px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.package__title {
+    color: rgb(178, 178, 178);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.special--title {
+    color: #fff;
+}
+
+
+.package__price {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+
+.package__period {
+    display: inline-block;
+    height: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+
+.package__list {
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 58px;
+}
+
+
+.package__list li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+
+    &:not(:last-child) {
+        margin-bottom: 25px;
+    }
+}
+
+.package--special {
+    background-color: #304ffef2;
+}
+
+.btn-outline {
+    margin-top: auto;
+    padding: 20px 0;
+    width: 180px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 17px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    transition: background-color .3s ease-in, color .3s ease-in;
+}
+
+.btn-outline:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-outline--special {
+    background-color: #fff;
+    color: #000;
+    transition: background-color .2s ease-in, color .2s ease-in;
+}
+
+.btn-outline--special:hover {
+    background-color: transparent;
+    color: #fff;
+}

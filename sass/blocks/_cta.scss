@@ -1,0 +1,72 @@
+.cta {
+    position: relative;
+    padding-top: 83px;
+    padding-bottom: 84px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.35)
+    }
+
+    @include bgImage ("../img/call.jpg");
+
+    @media (max-width: 1199px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        @include bgImage ("../img/call-900.jpg");
+    }
+
+    @media (max-width: 899px) {
+        @include bgImage ("../img/call-600.jpg");
+    }
+
+    @media (max-width: 599px) {
+        @include bgImage ("../img/call-320.jpg");
+    }
+}
+
+.cta__content {
+    position: relative;
+    text-align: center;
+    color: $maincolor;
+}
+
+.cta__title {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 40px;
+
+    @media (max-width: 899px) {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 599px) {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+}
+
+.cta__title span {
+    font-weight: 700;
+}
+
+.cta__btn {
+    display: inline-block;
+    padding: 21px 40px;
+    background-color: $brandcolor;
+    border-radius: 30px;
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $maincolor;
+    cursor: pointer;
+}

@@ -1,0 +1,128 @@
+.tasks {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e1e1e1;
+
+    @media (max-width: 1199px) {
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 899px) {
+      padding-top: 52px;
+      padding-bottom: 10px;
+    }
+
+    @media (max-width: 599px) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+}
+
+.tasks__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 114px;
+
+    @media (max-width: 1199px) {
+      padding-left: 75px;
+      padding-right: 0;
+    }
+
+    @media (max-width: 899px) {
+      padding-left: 0;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 599px) {
+      flex-direction: column-reverse;
+    }
+}
+
+.tasks__content {
+    width: 570px;
+
+    @media (max-width: 1199px) {
+      width: 495px;
+      padding-bottom: 10px;
+    }
+
+    @media (max-width: 899px) {
+      width: 270px;
+      padding-top: 6px;
+      padding-bottom: 0;
+    }
+
+    @media (max-width: 599px) {
+      width: 100%;
+      text-align: center;
+      padding-top: 0;
+    }
+}
+
+.tasks__header {
+    margin-bottom: 30px;
+
+    @media (max-width: 1199px) {
+      margin-bottom: 20px;
+    }
+}
+
+.tasks__title {
+    margin-bottom: 30px;
+
+    @media (max-width: 1199px) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 599px) {
+      margin-bottom: 10px;
+    }
+}
+
+.tasks__subtitle {
+    @media (max-width: 599px) {
+      width: 290px;
+    }
+}
+
+.tasks__desc {
+    width: 400px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.14;
+    color: $color;
+
+    @media (max-width: 1199px) {
+      width: unset;
+      max-width: 420px;
+    }
+
+    @media (max-width: 899px) {
+      line-height: 1.7;
+    }
+}
+
+.tasks__img {
+    @media (max-width: 1199px) {
+      width: 265px;
+    }
+
+    @media (max-width: 899px) {
+      width: 270px;
+    }
+
+    @media (max-width: 599px) {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+      img {
+        width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+}

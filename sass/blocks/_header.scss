@@ -1,0 +1,229 @@
+.header {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.35)
+    }
+    
+    @include bgImage ("../img/header-bg.jpg");
+
+    @media (max-width: 1199px) {
+        @include bgImage ("../img/header-900.jpg");
+    }
+
+    @media (max-width: 899px) {
+        @include bgImage ("../img/header-600.jpg");
+    }
+
+    @media (max-width: 599px) {
+        @include bgImage ("../img/header-320.jpg");
+    }
+}
+
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    position: relative;
+    color: $maincolor;
+
+    @media (max-width: 1199px) {
+      padding-bottom: 50px;
+    }
+
+    @media (max-width: 899px) {
+      padding-top: 20px;
+    }
+
+    @media (max-width: 599px) {
+      padding-bottom: 40px;
+    }
+}
+
+.header__buttons {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    margin-bottom: 140px;
+
+    @media (max-width: 1199px) {
+      width: 100%;
+      margin-bottom: 100px;
+    }
+
+    @media (max-width: 899px) {
+      margin-bottom: 30px;
+    }
+}
+
+.button-round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: background-color .2s ease-in;
+}
+
+.button-round:hover {
+    background-color: $brandcolor;
+}
+
+.button-round:hover .burger {
+    fill: $brandcolor;
+    stroke: #fff;
+}
+
+.button-round:hover .search {
+    fill: $brandcolor;
+    stroke: #fff;
+}
+
+.search {
+    fill: #fff;
+    stroke: #000;
+    transition: fill .2s ease-in, stroke .2s ease-in;
+}
+
+.button-round:hover .burger path {
+    fill: #fff;
+}
+
+.header__content {
+    text-align: center;
+    margin-bottom: 148px;
+
+    @media (max-width: 1199px) {
+      margin-bottom: 129px;
+    }
+
+    @media (max-width: 899px) {
+      margin-bottom: 80px;
+    }
+
+    @media (max-width: 599px) {
+      margin-bottom: 50px;
+    }
+}
+
+.header__title {
+    color: $maincolor;
+    font-size: 96px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+
+    @media (max-width: 1199px) {
+      font-size: 84px;
+      margin-bottom: 35px;
+    }
+
+    @media (max-width: 899px) {
+      font-size: 70px;
+      margin-bottom: 30px;
+    }
+}
+
+.header__desc {
+    max-width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    color: $maincolor;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 70px;
+
+    @media (max-width: 1199px) {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 899px) {
+      max-width: 430px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @media (max-width: 599px) {
+      margin-bottom: 30px;
+    }
+}
+
+.header__form {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 899px) {
+      width: 370px;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    @media (max-width: 599px) {
+      width: 100%;
+    }
+}
+
+.header__form > * + * {
+    margin-left: 20px;
+
+    @media (max-width: 899px) {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+}
+
+.header__form-input {
+    width: 240px;
+
+    @media (max-width: 899px) {
+      width: 100%;
+    }
+}
+
+.input {
+    display: block;
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    background-color: #000;
+    color: $maincolor;
+    font-size: 14px;
+    line-height: 60px;
+
+    @media (max-width: 899px) {
+      font-weight: 700;
+      padding-left: 46px;
+      padding-right: 46px;
+    }
+
+    @media (max-width: 599px) {
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+}
+
+.input::placeholder {
+    color: $maincolor;
+    font-size: 14px;
+    line-height: 22px;
+}
